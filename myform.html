@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            #resultdiv{
+                color:salmon;
+                font-family:courier;
+                font-size:22;
+            }
+        </style>
+        <script>
+            function nextPrime(number){
+                n=number
+                //n=document.getElementById("number").value;
+                while(true){
+                    flag=false;
+                    ++n;
+                    for(i=2;i<n;i++)
+                    {
+                        if(n%i==0){
+                            flag=true;
+                            break;
+                        }
+                    }
+                    if (!flag){
+                        break;
+                    }
+                }
+                console.log(n)
+                document.getElementById("resultdiv").innerHTML=n;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            <lable for="number">Enter the Number:</lable>
+            <input type="number" id="number" name="number" value="0"/>
+            <input type="button" onclick="nextPrime(this.form.number.value)" name="Find Next" value="Find Next"/>
+            <div id="resultdiv">
+            </div>
+        </form>
+    </body>
+</html>
