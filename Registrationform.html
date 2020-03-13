@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+        form{
+            text-align:center;
+            border:1px solid black;
+        }
+            table{
+                font-size:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" id="fname"/></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="lanme"/> </td>
+            </tr>
+            <tr>
+                <td>User Name:</td>
+                <td><input type="text" id="uname" /></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="pss"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" id="cnf_pass"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="email"/></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="text" id="mobile"/></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" value="Male" name="gender" id="gen"/>Male<br>
+                    <input type="radio" value="Female" name="gender" id="gen"/>Female
+                </td>
+            </tr>
+            <tr>
+                <td>DOB:</td>
+                <td><input type="date" id="dob"/></td>
+            </tr>
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select id="Course">
+                        <option value="" default>Select Course</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Nationality:</td>
+                <td><input type="checkbox" value="Indian" id="nation">Indian
+                    <input type="checkbox" value="others" id ="nation"/>Others 
+                </td>
+            </tr>
+            <tr>
+                <td>Profile:</td>
+                <td>
+                    <img src="Profile.jpg" width="100" height="100" alt="profilepic"/>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="file" id="file" />
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit"/></td>
+                <td><input type="reset"/></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
+
